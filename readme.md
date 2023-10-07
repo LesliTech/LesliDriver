@@ -1,15 +1,13 @@
 <p align="center">
 	<img width="90" alt="LesliCloud logo" src="./app/assets/images/lesli_driver/driver-logo.svg" />
+    <h3 align="center">Unified calendar app for The Lesli Framework.</h3>
 </p>
 
-<h3 align="center">Unified calendar app for The Lesli Framework.</h3>
-
+<hr/>
+Version 0.1.0
 <hr/>
 
-Version 0.1.0
-
-
-#### Quick start
+### Quick start
 
 ```shell
 # Add LesliDriver engine
@@ -29,20 +27,20 @@ end
 ```
 
 
-#### Documentation
+### Documentation
 * [Roadmap](./docs/roadmap.md)
 * [database](./docs/database.md)
 * [documentation](https://www.lesli.dev/documentation/)
 
 
-#### Get in touch
+### Get in touch
 
 * [Website: https://www.lesli.tech](https://www.lesli.tech)
 * [Email: hello@lesli.tech](hello@lesli.tech)
 * [Twitter: @LesliTech](hello@lesli.tech)
 
 
-#### License
+### License
 -------
 Copyright (c) 2023, Lesli Technologies, S. A.
 
@@ -64,6 +62,6 @@ along with this program. If not, see http://www.gnu.org/licenses/.
 
 <p align="center">
     <img width="200" alt="Lesli logo" src="https://cdn.lesli.tech/lesli/brand/app-logo.svg" />
-    <h4>Ruby on Rails SaaS Development Framework.</h4>
+    <h4 align="center">Ruby on Rails SaaS Development Framework.</h4>
 </p>
 
