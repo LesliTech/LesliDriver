@@ -1,0 +1,96 @@
+
+// · 
+@import "lesli/templates/dashboards";
+
+
+// · 
+$driver-color: #3689e6;
+$focus-color: #28bca3;
+$help-color: #a56de2;
+
+
+// · 
+#driver-calendar {
+    background-color: white;
+    box-shadow: $lesli-box-shadow;
+
+    .fc-header-toolbar {
+        height: 0px !important;
+        margin-bottom: 0;
+        h2 {
+            color: transparent;
+        }
+    }
+
+    // remove outside border of the calendar grid
+    .fc-scrollgrid {
+        border: none !important;
+
+        // calendar header (day names)
+        .fc-scrollgrid-section-header {
+
+            .fc-col-header-cell {
+                padding: .8rem 0;
+                text-align: center;
+                border-left-width: 0;
+                border-right-width: 0;
+                a {
+                    color: lesli-css-color(silver, 900)
+                }
+            }
+
+        }
+
+        .fc-scrollgrid-section-body {
+
+            // grid of days of the month
+            .fc-daygrid-day  {
+
+                // Day number
+                .fc-daygrid-day-top .fc-daygrid-day-number {
+                    padding: 5px 10px; 
+                }
+
+                // change current day indicator
+                &.fc-day-today .fc-daygrid-day-top .fc-daygrid-day-number {
+                    color: $lesli-color-primary;
+                    font-weight: 800;
+                }
+
+
+                // event in the calendar
+                .fc-daygrid-event {
+                    border: none;
+                    margin-left: 0;
+                    margin-bottom: .2rem;
+                    border-radius: 3px;
+
+                    padding-left: 4px;
+                    border-left: 5px solid $driver-color;
+                    background-color: lighten($driver-color, 40);
+
+                    .fc-event-title {
+                        text-transform: capitalize;
+                        color: darken($driver-color, 30);
+                        font-family: "Open Sans", "Helvetica Neue", "Helvetica", "Arial", "sans-serif", sans-serif;
+                    }
+
+                    // ticket events
+                    &.cloud-help-tickets {
+                        border-left-color: $help-color;
+                        background-color: lighten($help-color, 32);
+                        .event-title { color: darken($help-color, 30) }
+                    }
+
+
+                    // focus events
+                    &.cloud-focus-tasks {
+                        border-left-color: $focus-color;
+                        background-color: lighten($focus-color, 48  );
+                        .event-title { color: darken($focus-color, 30) }
+                    }
+                }
+            }
+        }
+    }
+}
