@@ -33,4 +33,10 @@ Building a better future, one line of code at a time.
 LesliDriver::Engine.routes.draw do
     root to: "dashboards#show"
     resource :dashboard, only: [:show]
+
+    resource :calendar, only: [:show] do
+    end
+
+    resources :events, only: [:index, :create] do
+    end
 end

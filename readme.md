@@ -4,7 +4,11 @@
 </p>
 
 <hr/>
-Version 0.1.0
+    <p align="center">
+        <a target="blank" href="https://rubygems.org/gems/lesli_driver">
+            <img src="https://badge.fury.io/rb/lesli_driver.svg" alt="Gem Version" height="18">
+        </a>
+    </p>
 <hr/>
 
 ### Quick start
@@ -37,7 +41,7 @@ end
 
 * [Website: https://www.lesli.tech](https://www.lesli.tech)
 * [Email: hello@lesli.tech](hello@lesli.tech)
-* [Twitter: @LesliTech](hello@lesli.tech)
+* [Twitter: @LesliTech](https://twitter.com/LesliTech)
 
 
 ### License

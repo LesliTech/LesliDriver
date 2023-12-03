@@ -1,4 +1,3 @@
-<%
 =begin
 
 Lesli
@@ -24,14 +23,15 @@ Made with ♥ by https://www.lesli.tech
 Building a better future, one line of code at a time.
 
 @contact  hello@lesli.tech
-@website  https://www.lesli.tech
+@website  https://www.lesli.dev
 @license  GPLv3 http://www.gnu.org/licenses/gpl-3.0.en.html
 
 // · ~·~     ~·~     ~·~     ~·~     ~·~     ~·~     ~·~     ~·~     ~·~
 // · 
 =end
-%>
 
-<%#= navigation_item(lesli_babel.dashboard_path, "Dashboard", "ri-dashboard-3-line"); %>
-<%= navigation_item(lesli_driver.calendar_path, "Calendar", "ri-calendar-2-fill") %>
-<%= navigation_item(lesli_driver.events_path, "Events", "ri-map-pin-2-line") %>
+module LesliDriver
+    class Account < ApplicationRecord
+        belongs_to :account, class_name: "Lesli::Account"
+    end
+end

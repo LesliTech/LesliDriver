@@ -1,6 +1,5 @@
-<%
-=begin
-
+<script setup>
+/*
 Lesli
 
 Copyright (c) 2023, Lesli Technologies, S. A.
@@ -29,9 +28,21 @@ Building a better future, one line of code at a time.
 
 // · ~·~     ~·~     ~·~     ~·~     ~·~     ~·~     ~·~     ~·~     ~·~
 // · 
-=end
-%>
+*/
 
-<%#= navigation_item(lesli_babel.dashboard_path, "Dashboard", "ri-dashboard-3-line"); %>
-<%= navigation_item(lesli_driver.calendar_path, "Calendar", "ri-calendar-2-fill") %>
-<%= navigation_item(lesli_driver.events_path, "Events", "ri-map-pin-2-line") %>
+
+// · import vue tools
+import { ref, reactive, onMounted, watch, computed, inject } from "vue"
+import { useRouter, useRoute } from "vue-router"
+
+
+// · Import components
+
+
+</script>
+<template>
+    <lesli-application-container>
+        <lesli-header title="Events">
+        </lesli-header>
+    </lesli-application-container>
+</template>

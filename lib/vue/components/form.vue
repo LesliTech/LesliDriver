@@ -17,12 +17,12 @@ For more information read the license file including with this software.
 */
 
 // · import lesli stores
-import { useCalendar } from 'CloudDriver/stores/calendar'
-import { useEvent } from 'CloudDriver/stores/event'
+import { useCalendar } from 'LesliDriver/stores/calendar'
+import { useEvents } from 'LesliDriver/stores/events'
 
 // · implement stores
 const storeCalendar = useCalendar()
-const storeEvent = useEvent()
+const storeEvent = useEvents()
 
 const translations = {
     events: I18n.t('driver.events'),
